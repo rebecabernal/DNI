@@ -23,7 +23,7 @@ In this project, the objective is to design with [Laravel](https://laravel.com) 
 
 1️⃣ Open a terminal in the folder where you want the repository to be cloned and enter this command:
 
-`(https://github.com/rebecabernal/DNI.git)`
+`[https://github.com/rebecabernal/DNI.git]`
 
 2️⃣ As you clone the repository, it will appear all the elements on it; you need to rename the file ".env.example" to ".env" and fill it with theese values:
 
