@@ -1,67 +1,81 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🆔 Kata DNI 
+In this project, the objective is to design with [Laravel](https://laravel.com) an application capable of generating via endpoint a letter for an eight-digit numerical string. Emulating the operation of the Spanish identification card (DNI).
+
+## 👀 App operation
+
+![Captura de pantalla 2025-01-16 091108](https://github.com/user-attachments/assets/58c988d1-2ecb-40bb-beaa-ece2b404b5fe)
+*Correct operation, returns the number entered and the assigned letter*
+
+
+![Captura de pantalla 2025-01-16 091056](https://github.com/user-attachments/assets/1ba33bbd-b252-4ea1-a511-8e9845129a18)
+*Incorrect operation, returns error text*
+
+## 💻 Languages ​​and tools  
+![](https://skillicons.dev/icons?i=php,laravel,git,github,vscode,)
+
+## ⚙️ Installation prerequisites
+🟢Install [Node.js](https://nodejs.org/en/download/source-code)
+
+🟢Install [Composer](https://getcomposer.org/download/)
+
+## 🛠️ Installation Guide 
+0️⃣ Before starting to install the project, you will need to create a database (we have used mysql via xampp) and name it: `katadni` 
+
+1️⃣ Open a terminal in the folder where you want the repository to be cloned and enter this command:
+
+`[https://github.com/rebecabernal/DNI.git]`
+
+2️⃣ As you clone the repository, it will appear all the elements on it; you need to rename the file ".env.example" to ".env" and fill it with theese values:
+
+![Captura de pantalla 2025-01-16 090959](https://github.com/user-attachments/assets/5222222b-880d-4dfd-8474-6748aa204776)
+
+2️⃣ In your preferred environment, open the project you cloned; you will need three consoles for the next step.
+
+▷Console 1:
+    `npm install` `npm run dev`
+    
+▷Console 2:
+    `composer install` `php artisan serve`
+    
+▷Console 3: 
+    `php artisan migrat:fresh`
+    `php artisan migrat:fresh --seed`
+    
+3️⃣ In the second console that you have opened, press the ctrl key and click on the link to localhost that it offers you. It should take you to the main view of the project where the offers are located.
+
+⚠️ If you have done the previous steps and the view has not opened correctly, go back to the third command console and enter this:
+
+`php artisan key:generate` `php artisan config:cache` 
+
+## 🌐 Endpoints 
+For this project, just one endpoint i needed to do all the functionalities; it's used to introduce the number you want to process; if it's correct it will return your number plus the corresponding letter; if it's not, it will show an error message warning you to introduce a valid number.
+
+### 🔠 Assingn letter (GET)
+`http://127.0.0.1:8000/api/link/id`
+
+*you need to introduce the number where the id goes*
+
+## 🧪 Tests 
+All tests passed. Introduce this line on your console to check it:
+
+`./vendor/bin/phpunit tests`
+
+![Captura de pantalla 2025-01-16 085433](https://github.com/user-attachments/assets/e83d3a4d-b5ae-4d49-b787-74546243d8e5)
+
+If you want to launch the tests and view them you can put this command in console 3:
+
+`php artisan test --coverage` 
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://github.com/user-attachments/assets/fedb145f-ac7b-4582-8bc3-0650835ca905" alt="PHP test coverage" width="500"/>
 </p>
 
-## About Laravel
+## 🗂️ Jira Backlog 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![Captura de pantalla 2025-01-16 085346](https://github.com/user-attachments/assets/62e37350-8d5f-4a33-ad98-7c49613c0d99)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 👩‍💻 My contact:
 
-## Learning Laravel
+📧rebecabernalmesa@gmail.com
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# DNI
