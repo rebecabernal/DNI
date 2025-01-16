@@ -3,10 +3,11 @@ In this project, the objective is to design with [Laravel](https://laravel.com) 
 
 ## 👀 App operation
 
-![Captura de pantalla 2025-01-09 113330](https://github.com/user-attachments/assets/9eea8e91-94ad-4e74-954b-a63feccd3f91)
+![Captura de pantalla 2025-01-16 091108](https://github.com/user-attachments/assets/58c988d1-2ecb-40bb-beaa-ece2b404b5fe)
 *Correct operation, returns the number entered and the assigned letter*
 
-![image](https://github.com/user-attachments/assets/d2d97dd5-53d5-49da-840a-e6fe5f353487)
+
+![Captura de pantalla 2025-01-16 091056](https://github.com/user-attachments/assets/1ba33bbd-b252-4ea1-a511-8e9845129a18)
 *Incorrect operation, returns error text*
 
 ## 💻 Languages ​​and tools  
@@ -26,7 +27,7 @@ In this project, the objective is to design with [Laravel](https://laravel.com) 
 
 2️⃣ As you clone the repository, it will appear all the elements on it; you need to rename the file ".env.example" to ".env" and fill it with theese values:
 
-![image](https://github.com/user-attachments/assets/0e0bf826-9b0e-4934-b0e3-4db53b9a04cd)
+![Captura de pantalla 2025-01-16 090959](https://github.com/user-attachments/assets/5222222b-880d-4dfd-8474-6748aa204776)
 
 2️⃣ In your preferred environment, open the project you cloned; you will need three consoles for the next step.
 
@@ -50,7 +51,7 @@ In this project, the objective is to design with [Laravel](https://laravel.com) 
 For this project, just one endpoint i needed to do all the functionalities; it's used to introduce the number you want to process; if it's correct it will return your number plus the corresponding letter; if it's not, it will show an error message warning you to introduce a valid number.
 
 ### 🔠 Assingn letter (GET)
-`http://127.0.0.1:8000/api/offers/id`
+`http://127.0.0.1:8000/api/link/id`
 
 *you need to introduce the number where the id goes*
 
@@ -59,9 +60,7 @@ All tests passed. Introduce this line on your console to check it:
 
 `./vendor/bin/phpunit tests`
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/b7dc068b-2746-4738-a0b8-2f9e1c851006" alt="PHP test" width="500"/>
-</p>
+![Captura de pantalla 2025-01-16 085433](https://github.com/user-attachments/assets/e83d3a4d-b5ae-4d49-b787-74546243d8e5)
 
 If you want to launch the tests and view them you can put this command in console 3:
 
@@ -73,8 +72,10 @@ If you want to launch the tests and view them you can put this command in consol
 
 ## 🗂️ Jira Backlog 
 
-![Captura de pantalla 2025-01-09 092149](https://github.com/user-attachments/assets/9341f690-3145-41e9-89cf-af1f00b91ee2)
+![Captura de pantalla 2025-01-16 085346](https://github.com/user-attachments/assets/62e37350-8d5f-4a33-ad98-7c49613c0d99)
 
-## 👩‍💻 About me  
-DAW graduate, im a developer enhancing my skills through a bootcamp focused on frontend, backend, and AWS.
-- [José Ignacio Gavilán Sánchez](https://github.com/sr-calcetines)
+
+## 👩‍💻 My contact:
+
+📧rebecabernalmesa@gmail.com
+
